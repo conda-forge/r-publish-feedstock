@@ -1,4 +1,4 @@
-{% set version = '2020.10.27' %}
+{% set version = "2020.11.30" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Publish_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Publish/Publish_{{ version }}.tar.gz
-  sha256: afd93f11dee905535b7067de0918241d39cc5893fe985814f18b8a68e83b2f05
+  sha256: 76ec27c504a30e1ed516ca4f34576854db8ab059533915174622bdb3d2f2fe6b
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -46,10 +46,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=Publish
   license: GPL-2.0-or-later
-  summary: A bunch of convenience functions that transform the results of some basic statistical
-    analyses into table format nearly ready for publication. This includes descriptive
-    tables, tables of logistic regression and Cox regression results as well as forest
-    plots.
+  summary: A bunch of convenience functions that transform the results of some basic statistical analyses into table format nearly ready for publication. This includes descriptive tables, tables of logistic regression and Cox regression results as well as forest plots.
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
