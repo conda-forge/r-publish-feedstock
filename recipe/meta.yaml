@@ -1,4 +1,4 @@
-{% set version = "2020.11.30" %}
+{% set version = "2020.12.23" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Publish_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Publish/Publish_{{ version }}.tar.gz
-  sha256: 76ec27c504a30e1ed516ca4f34576854db8ab059533915174622bdb3d2f2fe6b
+  sha256: a7a98fc52801bee30b9c8cb423e4e0082ea42d05134f7d3324ac3e95242cfbe2
 
 build:
   merge_build_host: true  # [win]
