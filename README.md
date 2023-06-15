@@ -1,11 +1,11 @@
-About r-publish
-===============
+About r-publish-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-publish-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=Publish
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-publish-feedstock/blob/main/LICENSE.txt)
 
 Summary: A bunch of convenience functions that transform the results of some basic statistical analyses into table format nearly ready for publication. This includes descriptive tables, tables of logistic regression and Cox regression results as well as forest plots.
 
